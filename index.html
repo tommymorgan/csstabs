@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CSS Tabs</title>
+		<link href="styles/csstabs.css" rel="stylesheet" type="text/css">
+		<link href="styles/themes/demo.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<ul class="tabs">
+			<li class="tab">
+				<input checked class="tab-button" id="tabset-1-foo" name="tabset1" type="radio" value="Foo">
+				<label class="tab-label" for="tabset-1-foo">Foo</label>
+				<section class="tab-content">
+					Here is some foo content.
+				</section>
+			<li class="tab">
+				<input class="tab-button" id="tabset-1-bar" name="tabset1" type="radio" value="Bar">
+				<label class="tab-label" for="tabset-1-bar">Bar</label>
+				<section class="tab-content">
+					Some bar content goes here.
+				</section>
+		</ul>
+
+		<p>
+			I know this is ugly.  <a href="http://www.catb.org/esr/" title="Eric S. Rymond">ESR</a> told me to
+			<q><a href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">release early, release often</a></q>.
+
+		<p>
+			Please submit a theme to help out!  See my &quot;demo&quot; theme under <code>styles/themes/</code> for direction.  I wrote the demo theme using Sass's SCSS syntax and I'd prefer themes be submitted in SCSS, but I will gladly accept .sass, LESS or plain old CSS.
+	</body>
+</html>

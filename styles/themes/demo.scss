@@ -1,0 +1,39 @@
+.tabs {
+	height: 60px;
+	padding: 0;
+}
+
+.tab {
+	margin-left: 10px;
+}
+
+.tab-button {
+	display: none;
+
+	&:checked {
+		~ .tab-label {
+			background-color: #ddd;
+			border-bottom-color: #ddd;
+		}
+	}
+}
+
+.tab-label {
+	background-color: #eee;
+	border: 1px solid #000;
+	border-radius: 4px 4px 0 0;
+	padding: 0 5px;
+	position: relative;
+	z-index: 1;
+}
+
+.tab-content {
+	background-color: #ddd;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	left: 0;
+	padding: 10px;
+	top: 19px;
+	width: 100%;
+	z-index: 0;
+}

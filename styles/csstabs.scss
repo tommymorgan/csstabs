@@ -1,0 +1,27 @@
+.tabs {
+	position: relative;
+}
+
+.tab {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.tab-button {
+	display: none;
+
+	&:checked {
+		~ .tab-content {
+			display: block;
+		}
+	}
+}
+
+.tab-label {
+	cursor: pointer;
+}
+
+.tab-content {
+	display: none;
+	position: absolute;
+}
